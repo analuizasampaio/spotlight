@@ -93,7 +93,23 @@ header{
     height: 507px;
     width: 542px;
 }
-#conheca, #conheca2, #funciona{
+.texto{
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px;
+    
+}
+.texto h1{
+    font-size: 45pt;
+    margin: 0;
+    color: #070b32;
+}
+
+.texto h2{
+    color: #070b32;
+    margin: 0;
+}
+
+#conheca, .conheca2, .funciona, #ranking{
     margin: 0;
     background-color: white;
     background-attachment: fixed;
