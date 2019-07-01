@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    
 }
 header{
     background-image: url("./images/fundoMuitoAmarelo.png");
@@ -9,18 +10,33 @@ header{
     height: 630px;
     display: flex;
     flex-direction: column;
+    position: relative;
+    display: inline-block;
 
     
 }
-header nav{
+.navbar{
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     height: 100px;
+    position: fixed;
+    top: 0;
+    transition: .5s;
 }
+
 .logo a{
     margin:60px;
+    font-family: 'Archivo', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 30pt;
+
+}
+.logo a:hover{
+    font-size: 32pt;
 }
 
 .menu{
@@ -28,26 +44,56 @@ header nav{
     align-items: center;
     justify-content: space-around;
     width: 50%;
+    
 }
 
-header section{
+.menu a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #070b32;
+    font-size: 14pt;
+}
+
+.menu a:hover{
+    color: white;
+}
+
+.login{
     display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 2px solid #070b32;
+    height: 35px;
+    width: 100px;
+}
+.login:hover{
+    background-color: #070b32;
+    color:white
+}
+
+.bannerContainer{
+    display: flex;
+    align-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
 }
 
-header section .imagem {
+.bannerContainer .imagem {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     width: 100%;
+    margin-top: 120px;
 }
 
-header section .imagem img{
+.bannerContainer .imagem img{
     height: 507px;
     width: 542px;
 }
-.conheca1, .conheca2{
+#conheca, #conheca2, #funciona{
     margin: 0;
     background-color: white;
     background-attachment: fixed;
