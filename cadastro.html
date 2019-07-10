@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Archivo|Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cadastro-style.css">
+    <script src="script.js" defer ></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 100){
+                    $(".navbar").css({"opacity" : "1"})
+                    $(".navbar").css({"background-color": "#facb14"})
+                    $(".navbar").css({"position": ""})
+                    
+                }else{
+                    $(".navbar").css({"background-color": "transparent"})
+                    
+                }
+            })
+        })
+    </script>
+    <title>Spotlight</title>
+</head>
+<body>
+     
+    <header>
+       <nav class="navbar transition">
+
+            <div class="logo">
+                <a href="">Spotlight</a>
+            </div>
+            <div class="menu">
+                <a href="#ranking">Ranking</a>
+                <a href="#conheca">Conheça</a>
+                <a href="">Cadastre-se</a>
+                <div class="login"><a href="">Login</a></div>
+            </div>
+
+        </nav>
+        <section class="bannerContainer">
+            <div class="texto">
+                <h1>A sua </h1>
+                <h1>comunidade </h1>
+                <h1>de parto. </h1>
+                <h2>Cadastre-se!</h2>
+                <h2>Compartilhe experiências</h2>
+                <h2>e transforme o próximo parto </h2>
+            </div>
+            <div class="imagem">
+                <img src="./images/minasSemSpotlight.png" alt="">
+            </div>
+
+        </section>
+    </header>
+    <main>
+        <section class="boxContent">
+
+            <p>Nome</p>
+            <input type="text" name="" id="nome">
+            <p>Sobrenome</p>
+            <input type="text" name="" id="sobrenome">
+            <p>User</p>
+            <input type="text" name="" id="username">
+            <p>E-mail</p>
+            <input type="email" name="" id="email">
+            <p>Senha</p>
+            <input type="password" name="" id="senha">
+            <p>Confirmar Senha</p>
+            <input type="password" name="" id="confirma">
+            <input type="button" value="Enviar" class="enviar">
+            
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
