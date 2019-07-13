@@ -6,7 +6,7 @@ let senha = document.querySelector('#senha');
 let btnEnviar = document.querySelector('.enviar');
 
 btnEnviar.addEventListener("click", ()=>{
-    fetch('http://localhost:8000/usuarios',{
+    fetch('https://thespotlightapi.herokuapp.com/usuarios',{
         method: 'POST',
         headers: {
             'Accept': 'application/json',
