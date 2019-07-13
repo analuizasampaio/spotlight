@@ -8,21 +8,6 @@
     <link rel="stylesheet" href="cadastro-style.css">
     <script src="script.js" defer ></script>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $(window).scroll(function(){
-                if($(this).scrollTop() > 100){
-                    $(".navbar").css({"opacity" : "1"})
-                    $(".navbar").css({"background-color": "#facb14"})
-                    $(".navbar").css({"position": ""})
-                    
-                }else{
-                    $(".navbar").css({"background-color": "transparent"})
-                    
-                }
-            })
-        })
-    </script>
     <title>Spotlight</title>
 </head>
 <body>
@@ -34,44 +19,49 @@
                 <a href="">Spotlight</a>
             </div>
             <div class="menu">
-                <a href="#ranking">Ranking</a>
-                <a href="#conheca">Conheça</a>
+                <a href="./index.html#ranking">Ranking</a>
+                <a href="./index.html#conheca">Conheça</a>
                 <a href="">Cadastre-se</a>
                 <div class="login"><a href="">Login</a></div>
             </div>
-
         </nav>
-        <section class="bannerContainer">
-            <div class="texto">
-                <h1>A sua </h1>
-                <h1>comunidade </h1>
-                <h1>de parto. </h1>
-                <h2>Cadastre-se!</h2>
-                <h2>Compartilhe experiências</h2>
-                <h2>e transforme o próximo parto </h2>
-            </div>
-            <div class="imagem">
-                <img src="./images/minasSemSpotlight.png" alt="">
-            </div>
-
-        </section>
     </header>
     <main>
         <section class="boxContent">
-
-            <p>Nome</p>
-            <input type="text" name="" id="nome">
-            <p>Sobrenome</p>
-            <input type="text" name="" id="sobrenome">
-            <p>User</p>
-            <input type="text" name="" id="username">
-            <p>E-mail</p>
-            <input type="email" name="" id="email">
-            <p>Senha</p>
-            <input type="password" name="" id="senha">
-            <p>Confirmar Senha</p>
-            <input type="password" name="" id="confirma">
-            <input type="button" value="Enviar" class="enviar">
+            <div class="inpt">
+                <p>Nome</p>
+                <input type="text" name="" id="nome">
+                
+            </div>
+            <div class="inpt">
+                <p>Sobrenome</p>
+                <input type="text" name="" id="sobrenome">
+                
+            </div>
+            <div class="inpt">
+                <p>User</p>
+                <input type="text" name="" id="username">
+                
+            </div>
+            <div class="inpt">
+                <p>E-mail</p>
+                <input type="email" name="" id="email">
+                
+            </div>
+            <div class="inpt">
+                <p>Senha</p>
+                <input type="password" name="" id="senha">
+                
+            </div>
+            <div class="inpt">
+                <p>Confirmar Senha</p>
+                <input type="password" name="" id="confirma">
+                
+            </div>
+            <div class="inptEnviar">
+                <input type="button" value="Enviar" class="enviar">
+                
+            </div>
             
         </section>
     </main>
