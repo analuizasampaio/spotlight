@@ -15,7 +15,6 @@ btnEnviar.addEventListener("click", ()=>{
         body: JSON.stringify({
             'nome': nome.value,
             'sobrenome': sobrenome.value,
-            'username' : username.value,
             'email': email.value,
             'senha': senha.value
 
