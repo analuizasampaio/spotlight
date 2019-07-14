@@ -1,8 +1,8 @@
-body{
+body {
     margin: 0;
-    
 }
-header{
+
+header {
     background-image: url("./images/fundoMuitoAmarelo.png");
     background-attachment: fixed;
     background-size: cover;
@@ -12,10 +12,9 @@ header{
     flex-direction: column;
     position: relative;
     display: inline-block;
-
-    
 }
-.navbar{
+
+.navbar {
     background-color: transparent;
     display: flex;
     align-items: center;
@@ -28,38 +27,37 @@ header{
     z-index: 1000;
 }
 
-.logo a{
-    margin:60px;
+.logo a {
+    margin: 60px;
     font-family: 'Archivo', sans-serif;
     text-decoration: none;
     color: white;
     font-size: 30pt;
-
 }
-.logo a:hover{
+
+.logo a:hover {
     font-size: 32pt;
 }
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 50%;
-    
 }
 
-.menu a{
+.menu a {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: #070b32;
     font-size: 14pt;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: white;
 }
 
-.login{
+.login {
     display: flex;
     align-content: center;
     align-items: center;
@@ -69,12 +67,13 @@ header{
     height: 35px;
     width: 100px;
 }
-.login:hover{
+
+.login:hover {
     background-color: #070b32;
-    color:white
+    color: white
 }
 
-.bannerContainer{
+.bannerContainer {
     display: flex;
     align-content: center;
     align-items: center;
@@ -90,35 +89,36 @@ header{
     margin-top: 120px;
 }
 
-.bannerContainer .imagem img{
+.bannerContainer .imagem img {
     height: 507px;
     width: 542px;
 }
-.texto{
+
+.texto {
     font-family: 'Montserrat', sans-serif;
     margin: 50px;
     width: 50%;
-    
 }
-.texto h1{
+
+.texto h1 {
     font-size: 45pt;
     margin: 0;
     color: #070b32;
 }
 
-.texto h2{
+.texto h2 {
     color: #070b32;
     margin: 0;
 }
 
-h3{
+h3 {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: #070b32;
     font-size: 25pt;
 }
 
-h4{
+h4 {
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: white;
@@ -126,90 +126,259 @@ h4{
     margin: 0;
 }
 
-#conheca, .conheca2, #ranking{
+#conheca,
+.conheca2,
+#ranking {
     margin: 0;
     background-color: white;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 630px;
+    height: 670px;
     position: relative;
 }
 
-#conheca{
+#conheca {
     display: flex;
     flex-direction: column;
 }
 
-.conteudo{
+.conteudo {
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 100%;
     height: 500px;
 }
+
 .conteudo .imagem {
     height: 400px;
 }
-.conteudo .imagem img{
+
+.conteudo .imagem img {
     height: 650px;
     margin-right: 474px;
-
 }
 
-.conheca2{
+.conheca2 {
     display: flex;
     flex-direction: column;
-
 }
 
-.conteudo2{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 500px;
+.conteudo2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 500px;
 }
 
-.conteudo2 .imagem{
+.conteudo2 .imagem {
     height: 400px;
 }
 
-.conteudo2 .imagem img{
+.conteudo2 .imagem img {
     height: 515px;
     margin-left: 90px;
-
 }
 
-.conteudo2 .texto{
+.conteudo2 .texto {
     height: 400px;
-
 }
 
-.funciona{
+
+/* AQUI COMEÇA O COMO FUNCIONA */
+
+.funciona {
     background-image: url("./images/fundo2.png");
     background-attachment: fixed;
     background-size: cover;
-    width: 100%;
-    height: 630px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.boxContent{
+.boxContent {
     display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: center
+    flex-direction: column;
+    height: 50px;
+    justify-content: space-around;
 }
-.mao{
-    height: 100%;
+
+.icones {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px;
+}
+
+h4 {
+    width: 40px;
+    font-size: 30pt;
+    padding-left: 25px;
+}
+
+.mao {
     width: 50%;
     display: flex;
     justify-content: flex-end;
+    margin-left: 45px;
 }
-footer{
+
+.mao img {
+    width: 102%;
+}
+
+.icones img {
+    width: 150px;
+}
+
+.iconesTxt {
+    color: #facb14;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.iconesDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* AQUI ACABA O COMO FUNCIONA */
+
+
+/* E AGORA COMEÇA O RANKING, BEBE */
+
+#ranking {
+    display: flex;
+}
+
+.rankingTxt h6 {
+    color: #060332;
+    font-size: 30pt;
+    font-family: 'Archivo', sans-serif;
+    margin: 0;
+}
+
+.rankingTxt :nth-child(2) {
+    color: #060332;
+    font-family: 'Archivo', sans-serif;
+    font-size: 20pt;
+    width: 400px;
+}
+
+.rankingTxt :nth-child(3) {
+    border-style: none;
+    background-color: white;
+    height: 35px;
+    width: 280px;
+    border: solid 1px #060332;
+    border-radius: 20px;
+    color: #060332;
+    font-family: 'Archivo', sans-serif;
+}
+
+.rankingTxt {
+    padding-top: 150px;
+    padding-left: 70px;
+}
+
+aside {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.podium {
+    display: flex;
+}
+
+.rankingMina {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 100px;
+}
+
+.rankingMina img {
+    width: 480px;
+    height: 570px;
+}
+
+.podium {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+#podium1,
+#podium2,
+#podium3 {
+    background-color: #facb14;
+    width: 250px;
+}
+
+#podium1 {
+    height: 220px;
+    color: #060332;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#podium2 {
+    height: 150px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#podium3 {
+    height: 110px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#podium1:hover {
+    animation: podium 0.3s ease-in;
+    height: 260px;
+}
+
+#podium2:hover {
+    height: 190px;
+    animation: podium 0.3s ease-in;
+}
+
+#podium3:hover {
+    height: 140px;
+    animation: podium 0.3s ease-in;
+}
+
+@keyframes podium {
+    from {
+        transform: translateY(40px);
+    }
+    to {
+        transform: translateY(0px)
+    }
+}
+
+
+/* E AGORA TERMINA O RANKING, BEBE */
+
+footer {
     background-image: url("./images/fundo2.png");
     background-attachment: fixed;
     background-size: cover;
