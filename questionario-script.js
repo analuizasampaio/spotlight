@@ -1,19 +1,44 @@
 let btnEnviar = document.querySelector(".enviar")
-let pontos = document.querySelectorAll("input[type=checkbox]")
-let result 
+let pontos = document.querySelectorAll(".custom-control-input[type=checkbox]")
+let result = 0
+let lista = []
 
-btnEnviar.addEventListener("click", ()=>{
-    for(let i = 0; i <= pontos.length; i++){
-        if (pontos[i].checked){
+btnEnviar.addEventListener("click", () => {
+    pontos.forEach(ponto => {
+        if (ponto.checked) {
+            lista.push(Number(ponto.value))
 
-            for(let j = 0; j <= pontos.length-1;j++){
-            result = Number(pontos[j].value) + Number(pontos[j].value)
-            console.log(pontos[j].value)
-            console.log(result)   
-            }
-            
         }
-    }
+    });
+    console.log(lista)
+    lista.forEach(elemento => {
+        result = result + elemento
+    })
+    console.log(result) 
+
+    fetch('https://thespotlightapi.herokuapp.com/usuarios/5d2a4f03bc19990004ebcc8c',{
+        method: 'PATCH',
+        headers: {
+            'Accept': 'application/json',
+            'Content-type': 'application/json'
+        },
+        body: JSON.stringify({
+            'pontuacao': result
+
+        })
+    })
+    .then((response)=>{
+        return response.json()
+    })
+    .then((data)=>{
+
+        console.log(data)
+        window.location.reload()
     
+    })
+    .catch(function(erro){
+        console.log(erro)
+    })
     
+
 })

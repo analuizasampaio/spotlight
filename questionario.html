@@ -30,11 +30,23 @@
     </header>
     <main>
         <section class="boxContent">
-            <h1>Informações sobre o parto</h1>
+            <h1>Nos conte sobre seu parto</h1>
+            <div class="inpt">
+                <p>Qual foi o hospital?</p>
+                <input type="text" name="" id="">
+            </div>
+            <div class="inpt">
+                <p></p>
+            </div>
             <div class="inpt">
                 <p>Qual foi a via de parto?</p>
-                <input type="checkbox" name="" id="">Normal
-                <input type="checkbox" name="" id="">Cesárea
+                <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" value=0>
+                        <label class="custom-control-label" for="customCheck1">Normal</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2" value=10>
+                        <label class="custom-control-label" for="customCheck2">Cesária</label>
             </div>
             <div class="inpt">
                 <p>Quanto tempo durou seu parto (do inicio das contrações até a saída do bb)?</p>
@@ -42,29 +54,35 @@
             </div>
             <div class="inpt">
                 <p>Sua gravidez foi:</p>
-                <input type="checkbox" name="" id="">De baixo risco
-                <input type="checkbox" name="" id="">De alto risco
+                <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck1" value=0>
+                        <label class="custom-control-label" for="customCheck1">De baixo risco</label>
+                    </div>
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck2" value=10>
+                        <label class="custom-control-label" for="customCheck2">De alto risco</label>
+                    </div>
             </div>
             <div class="inpt">
                 <p>Você foi informada que para gestações de baixo risco o melhor parto é o normal?</p>
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" id="customCheck1" value=0>
-                    <label class="custom-control-label" for="customCheck1">SINHE</label>
+                    <label class="custom-control-label" for="customCheck1">Sim</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                     <input type="checkbox" class="custom-control-input" id="customCheck2" value=10>
-                    <label class="custom-control-label" for="customCheck2">NAAAO</label>
+                    <label class="custom-control-label" for="customCheck2">Não</label>
                 </div>
             </div>
             <div class="inpt">
                 <p>Você foi informada sobre o baixo risco/alto risco da sua gestação?</p>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck3" value=10>
-                        <label class="custom-control-label" for="customCheck3">SINHE</label>
+                        <label class="custom-control-label" for="customCheck3">Sim</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck4" value=0>
-                        <label class="custom-control-label" for="customCheck4">NAAAO</label>
+                        <label class="custom-control-label" for="customCheck4">Não</label>
                 </div>
     
             </div>
@@ -72,73 +90,73 @@
                 <p>Você foi informada que para gestações de baixo risco o melhor parto é o normal?</p>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck5" value=10>
-                        <label class="custom-control-label" for="customCheck5">SINHE</label>
+                        <label class="custom-control-label" for="customCheck5">Sim</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck6" value=0>
-                        <label class="custom-control-label" for="customCheck6">NAAAO</label>
+                        <label class="custom-control-label" for="customCheck6">Não</label>
                 </div>
             </div>
             <div class="inpt">
                 <p>Você teve acompanhante para o parto?</p>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck7" value=10>
-                        <label class="custom-control-label" for="customCheck7">SINHE</label>
+                        <label class="custom-control-label" for="customCheck7">Sim</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck8" value=0>
-                        <label class="custom-control-label" for="customCheck8">NAAAO</label>
+                        <label class="custom-control-label" for="customCheck8">Não</label>
                 </div>
             </div>
             <div class="inpt">
                 <p>Foi oferecido lanches leves para você durante o trabalho de parto?</p>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck9" value=10>
-                        <label class="custom-control-label" for="customCheck9">SINHE</label>
+                        <label class="custom-control-label" for="customCheck9">Sim</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck10" value=0>
-                        <label class="custom-control-label" for="customCheck10">NAAAO</label>
+                        <label class="custom-control-label" for="customCheck10">Não</label>
                 </div>
             </div>
             <div class="inpt">
                 <p>Em algum momento algum profissional fez algum corte na sua vulva(vagina)?</p>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck11" value=0>
-                        <label class="custom-control-label" for="customCheck11">SINHE</label>
+                        <label class="custom-control-label" for="customCheck11">Sim</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck12" value=100>
-                        <label class="custom-control-label" for="customCheck12">NAAAO</label>
+                        <label class="custom-control-label" for="customCheck12">Não</label>
                 </div>
             </div>
             <div class="inpt">
                 <p>Em algum momento você foi orientada quando fazer força e quando parar?</p>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck13" value=0>
-                        <label class="custom-control-label" for="customCheck13">SINHE</label>
+                        <label class="custom-control-label" for="customCheck13">Sim</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck14" value=10>
-                        <label class="custom-control-label" for="customCheck14">NAAAO</label>
+                        <label class="custom-control-label" for="customCheck14">Não</label>
                 </div>
             </div>
             <div class="inpt">
                 <p>Foi encorajada e ficar deitada durante todo o parto?</p>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck15" value=0>
-                        <label class="custom-control-label" for="customCheck15">SINHE</label>
+                        <label class="custom-control-label" for="customCheck15">Sim</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck16" value=10>
-                        <label class="custom-control-label" for="customCheck16">NAAAO</label>
+                        <label class="custom-control-label" for="customCheck16">Não</label>
                 </div>
             </div>
             <div class="inpt">
                 <p>Andou e se movimentou conforme queria?</p>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck17" value=10>
-                        <label class="custom-control-label" for="customCheck17">SINHE</label>
+                        <label class="custom-control-label" for="customCheck17">Sim</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck18" value=0>
@@ -149,7 +167,7 @@
                 <p>Em algum momento algum profissional da equipe médica subiu, apoiou ou fez força sobre sua barriga?</p>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck19" value=0>
-                        <label class="custom-control-label" for="customCheck19">SINHE</label>
+                        <label class="custom-control-label" for="customCheck19">Sim</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck20" value=50>
@@ -160,7 +178,7 @@
                 <p>Houve contato pele-a-pele com o bebê assim que ele/ela nasceu?</p>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck21" value=10>
-                        <label class="custom-control-label" for="customCheck21">SINHE</label>
+                        <label class="custom-control-label" for="customCheck21">Sim</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck22" value=0>
@@ -171,7 +189,7 @@
                 <p>Houve incentivo a amamentação nos primeiros instante de vida do bebê?</p>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck23" value=10>
-                        <label class="custom-control-label" for="customCheck23">SINHE</label>
+                        <label class="custom-control-label" for="customCheck23">Sim</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck24" value=0>
@@ -183,7 +201,7 @@
                 <p>Foi ensinada sobre práticas corretas de amamentação?</p>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck25" value=10>
-                        <label class="custom-control-label" for="customCheck25">SINHE</label>
+                        <label class="custom-control-label" for="customCheck25">Sim</label>
                 </div>
                 <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="customCheck26" value=0>
