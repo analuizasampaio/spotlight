@@ -74,7 +74,7 @@ fetch('https://thespotlightapi.herokuapp.com/usuarios')
             hospitaisRanking.innerHTML = `
             <div class="hospital">
             <h1>1º -  </h1>        
-            <p> ${data[0].hospital} -  Pontuação: ${ranking[0]}</p>
+            <p> ${data[1].hospital} -  Pontuação: ${ranking[0]}</p>
             </div>
             <div class="hospital">
             <h1>2º - </h1>        
