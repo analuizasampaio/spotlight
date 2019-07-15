@@ -28,7 +28,7 @@ btnEnviar.addEventListener("click", ()=>{
     .then((data)=>{
 
         console.log(data)
-        window.locaton = './questionario.html'
+        window.locaton = 'https://thespotlight.herokuapp.com/questionario.html'
     
     })
     .catch(function(erro){
