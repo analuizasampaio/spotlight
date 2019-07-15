@@ -1,4 +1,8 @@
 let btnEnviar = document.querySelector(".enviar")
+let nomeHospital = document.querySelector(".nomeHospital")
+let endereco = document.querySelector(".endereco")
+let nota = document.querySelector(".nota")
+let relato = document.querySelector(".relato")
 let pontos = document.querySelectorAll(".custom-control-input[type=checkbox]")
 let result = 0
 let lista = []
@@ -23,7 +27,11 @@ btnEnviar.addEventListener("click", () => {
             'Content-type': 'application/json'
         },
         body: JSON.stringify({
-            'pontuacao': result
+            'hospital':nomeHospital.value,
+            'endereco' : endereco.value,
+            'pontuacao': result,
+            'nota': nota.value,
+            'relato': relato.value
 
         })
     })
@@ -33,7 +41,7 @@ btnEnviar.addEventListener("click", () => {
     .then((data)=>{
 
         console.log(data)
-        window.location.reload()
+        window.location.reload()    
     
     })
     .catch(function(erro){
