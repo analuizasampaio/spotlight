@@ -72,6 +72,7 @@ fetch('https://thespotlightapi.herokuapp.com/usuarios')
     ranking.forEach(hospital => {
         if(hospital == 208){
             hospitaisRanking.innerHTML = `
+            <h1>Ranking dos melhores hospitais</h1>
             <div class="hospital">
             <h1>1º -  </h1>        
             <p> ${data[1].hospital} -  Pontuação: ${ranking[0]}</p>
