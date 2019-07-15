@@ -65,6 +65,7 @@ fetch('https://thespotlightapi.herokuapp.com/usuarios')
     let listaHospitais = []
     listaHospitais.push(total)
     listaHospitais.push(totalAng)
+    listaHospitais.push(totalSep)
     lista = listaHospitais.sort()
     ranking = lista.reverse()
     console.log(ranking)
@@ -72,16 +73,16 @@ fetch('https://thespotlightapi.herokuapp.com/usuarios')
         if(hospital == 208){
             hospitaisRanking.innerHTML = `
             <div class="hospital">
-            <h1>1º  </h1>        
-            <p> ${data[0].hospital} Pontuação: ${ranking[0]}</p>
+            <h1>1º -  </h1>        
+            <p> ${data[0].hospital} -  Pontuação: ${ranking[0]}</p>
             </div>
             <div class="hospital">
-            <h1>2º </h1>        
-            <p> ${data[2].hospital} Pontuação: ${ranking[1]}</p>
+            <h1>2º - </h1>        
+            <p> ${data[5].hospital} -  Pontuação: ${ranking[1]}</p>
             </div>
             <div class="hospital">
-            <h1>3º  </h1>        
-            <p> ${data[2].hospital} Pontuação: ${ranking[1]}</p>
+            <h1>3º - </h1>        
+            <p> ${data[2].hospital} -  Pontuação: ${ranking[2]}</p>
             </div>
 
             `

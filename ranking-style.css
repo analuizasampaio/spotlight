@@ -63,7 +63,10 @@ main{
 .hospital{
     display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+.hospital p{
+    text-align: left;
 }
 
 footer{
