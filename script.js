@@ -4,6 +4,7 @@ let username = document.querySelector('#username');
 let email = document.querySelector('#email');
 let senha = document.querySelector('#senha');
 let btnEnviar = document.querySelector('.enviar');
+let box = document.querySelector('.boxContent')
 
 
 btnEnviar.addEventListener("click", ()=>{
@@ -27,6 +28,7 @@ btnEnviar.addEventListener("click", ()=>{
     .then((data)=>{
 
         console.log(data)
+        window.locaton = './questionario.html'
     
     })
     .catch(function(erro){

@@ -35,9 +35,6 @@ header {
     font-size: 30pt;
 }
 
-.logo a:hover {
-    font-size: 32pt;
-}
 
 .menu {
     display: flex;
@@ -248,7 +245,7 @@ h4 {
 /* AQUI ACABA O COMO FUNCIONA */
 
 
-/* E AGORA COMEÇA O RANKING, BEBE */
+/* E AGORA COMEÇA O RANKING */
 
 #ranking {
     display: flex;
