@@ -317,7 +317,9 @@ aside {
     background-color: #facb14;
     width: 250px;
 }
-
+a{
+    text-decoration: none;
+}
 #podium1 {
     height: 220px;
     color: #060332;
@@ -382,6 +384,25 @@ footer {
     width: 100%;
     height: 630px;
     display: flex;
-    flex-direction: column;
     position: relative;
+    align-items: flex-end;
+}
+
+.container{
+    width: 50%;
+    height: 50%;
+    margin-left: 15%;
+
+}
+
+.iconesFooter{
+    height: 30%;
+    width: 57%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icone a img{
+    height: 50px;
+    width: 50px;
 }
